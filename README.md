@@ -131,3 +131,33 @@ This project is built using the following tools and frameworks:
 
 ```text
 ai_agent_math_factorial.py
+```
+
+## How the Code Works
+
+The program follows this structure:
+
+### 1. Install dependencies
+The notebook installs the required LangChain and Hugging Face libraries needed to run the agent and model pipeline.
+
+### 2. Import required modules
+It imports:
+- Hugging Face model and tokenizer utilities
+- LangChain agent components
+- Python REPL tool
+- prompt utilities
+- streaming-related classes
+
+### 3. Patch the Hugging Face streaming behavior
+A custom class named `PatchedHuggingFacePipeline` extends `HuggingFacePipeline`.
+
+Why this matters:
+- the default streaming path can sometimes fail in Colab-like environments
+- this patched version uses a safer streaming setup
+- it helps the agent run more reliably
+
+### 4. Load the model
+The code loads:
+
+```text
+Qwen/Qwen2.5-1.5B-Instruct
