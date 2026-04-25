@@ -271,3 +271,10 @@ A simple way to understand the overall architecture is:
 - **Prompt** = the instructions
 - **Agent** = the decision-maker
 - **Executor** = the workflow runner
+
+## Known Notes
+
+- The initial model download may take some time in Google Colab.
+- Hugging Face authentication is optional for public models, but adding an `HF_TOKEN` can improve download reliability and speed.
+- The custom patched pipeline is included to make streaming more stable during agent execution.
+- This is a learning-focused project, so the use case is intentionally small and easy to follow.
