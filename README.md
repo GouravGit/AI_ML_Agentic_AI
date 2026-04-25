@@ -1,4 +1,4 @@
-# Agentic AI in Google Colab — Factorial Use Case 1
+# Agentic AI in Google Colab — Use Case 1 (Factorial)
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Google Colab](https://img.shields.io/badge/Run-Google%20Colab-orange)
