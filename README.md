@@ -236,3 +236,15 @@ The input task is:
 ### Option 2: Run from the exported script
 
 If you want to run the code as a Python script, first move the notebook-specific installation commands into your local or virtual environment setup.
+
+## Expected Output
+
+The final answer for this use case should be:
+
+```text
+720
+
+Because:
+
+```text
+6! = 6 × 5 × 4 × 3 × 2 × 1 = 720
