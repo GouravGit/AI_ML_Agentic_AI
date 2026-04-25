@@ -205,3 +205,12 @@ The code uses `create_react_agent(...)` to combine:
 - and the prompt template.
 
 This creates the core decision-making agent.
+
+### 10. Create the executor
+The `AgentExecutor` runs the agent step by step and manages:
+
+- reasoning flow,
+- tool execution,
+- parsing errors,
+- maximum iteration limits,
+- and verbose logging.
