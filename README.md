@@ -161,4 +161,16 @@ The code loads (This model is used as the reasoning engine for the agent):
 
 ```text
 Qwen/Qwen2.5-1.5B-Instruct
+```
 
+### 5. Create a text-generation pipeline
+The Hugging Face model and tokenizer are wrapped inside a text-generation pipeline with controlled generation settings such as:
+
+- `max_new_tokens`
+- `do_sample=False`
+- `return_full_text=False`
+
+These settings help make the model output more predictable and suitable for agent execution.
+
+### 6. Wrap the model for LangChain
+The Hugging Face pipeline is then wrapped in a LangChain-compatible LLM class so it can be used directly by the agent framework.
